@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envia tu CV</title>
+    <link rel="shortcut icon" href="../Imagenes/Icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header class="inicio">
+        <div class="contenedor">
+            <img class="Imagen" src="../Imagenes/Logo circulo.png" alt="Logo">
+            <div class="Titulo">
+                <h1> Cafetería & Restaurante</h1>
+            </div>
+        </div>
+        <br>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cafetería & Restaurante</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Opciones/menus.html" target="_blank">Menús </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Opciones/cafeteria.html" target="_blank">Cafetería </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Opciones/dias-horarios.html" target="_blank">Dias y horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reservas.html" target="_blank">Reservas para cumpleaños </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header id="CV">
+        <h1 class="Titulo">Envia tu CV para trabajar con nosotros.</h1>
+        <p class="principal">Si estas buscando empleo, podes enviarnos tu CV para nuestras proximas busquedas laborales.</p>
+        <h5>Completa el siguiente formulario con tus datos correctamente.</h5>
+        <br>
+    </header>
+    <main class="formulario">
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            <br><br>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+            <br><br>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="nombre" min="18" max="75" placeholder="Ingrese su edad" required> 
+            <h6>*Edad minima 18 años</h6>
+            <br>
+
+            <label for="dni">DNI</label>
+            <input type="number" id="dni" placeholder="Ingrese su n° Documento" required>
+            <br><br>
+
+
+            <label for="mail">Email</label>
+            <input type="email" id="mail" placeholder="Ingrese su correo" required>
+            <br><br>
+
+            <label for="puesto">¿A que puesto te postulas?</label>
+            <select name="puesto" id="puesto" required>
+                <option value="">Cocinero</option>
+                <option value="">Camarero</option>
+                <option value="">Ayudante de cocina</option>
+                <option value="">Cajero</option>
+                <option value="">Personal de Limpieza</option>
+                <option value="">Pastelero</option>
+            </select>
+            <br><br>
+
+            <label for="CV">Adjunta tu CV</label>
+            <input type="file" id="CV" required>
+            <br><br>
+
+            <input type="submit" value="Enviar formulario">
+            <input type="reset" value="Borrar todo">
+        </form>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
