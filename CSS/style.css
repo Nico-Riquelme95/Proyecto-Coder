@@ -162,8 +162,7 @@ padding: 0;
 }
 
 .imagenMenu{
-    width: 200px;
-    height: auto;
+    display: none;
 }
 
 .Titulo{
