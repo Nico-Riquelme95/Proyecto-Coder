@@ -167,7 +167,19 @@ padding: 0;
 
 .contenedor .Titulo{
     display: none;
-} 
+}
+
+button .carousel-control-prev-icon {
+    display: none;
+}
+button .carousel-control-next-icon {
+    display: none;
+}
+}
+@media (max-width: 520px){
+#carouselExampleAutoplaying {
+        margin-bottom: -250px;
+    }
 }
 
 @media (min-width: 768px){
