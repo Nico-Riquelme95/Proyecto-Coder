@@ -76,13 +76,13 @@
 #navbarNav {
   justify-content: space-evenly;
 }
-#navbarNav .a {
+#navbarNav a {
   font-family: "courgette", cursive;
   font-size: large;
   text-decoration: none;
   color: blue;
 }
-#navbarNav .a:hover {
+#navbarNav a:hover {
   display: flex;
   text-decoration: none;
   transition: 0.3s;
@@ -233,5 +233,4 @@ label {
   .fra {
     border: 3px dashed;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
