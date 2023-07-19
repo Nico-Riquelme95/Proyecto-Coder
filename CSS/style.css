@@ -198,7 +198,7 @@ button .carousel-control-next-icon {
     cursor: pointer;
 }
 }
-#carne{
+.carne{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
@@ -206,63 +206,63 @@ button .carousel-control-next-icon {
     place-items: center;
 }
 
-#pasta{
+.pasta{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-radius: 20px;
     place-items: center;
 }
-#pizza{
+.pizza{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
     border-radius: 20px;
     place-items: center;
 }
-#hamb{
+.hamb{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-radius: 20px;
     place-items: center;
 }
-#empanada{
+.empanada{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
     border-radius: 20px;
     place-items: center;
 }
-#cajita{
+.cajita{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-radius: 20px;
     place-items: center;
 }
-#postres{
+.postres{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
     border-radius: 20px;
     place-items: center;
 }
-#Coffee{
+.Coffee{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
     border-radius: 20px;
     place-items: center;
 }
-#te{
+.te{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px solid;
     border-radius: 20px;
     place-items: center;
 }
-#fra{
+.fra{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
