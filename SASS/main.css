@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +55,7 @@
   background-color: antiquewhite;
   margin: 10px 10px;
   height: 80px;
+  transform: skew(340deg);
 }
 
 .contenedor {
@@ -85,7 +87,7 @@
 #navbarNav a:hover {
   display: flex;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.8s;
   transform: scale(1.2);
   background-color: yellow;
   cursor: pointer;
@@ -95,6 +97,50 @@
   background-color: antiquewhite;
   font-size: 20px;
   font-family: cursive;
+}
+
+.carne, .fra, .te, .Coffee, .postres, .cajita, .empanada, .hamb, .pizza, .pasta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 3px dashed;
+  border-radius: 20px;
+  place-items: center;
+}
+
+.pasta {
+  border: 3px solid;
+}
+
+.pizza {
+  border: 3px dashed;
+}
+
+.hamb {
+  border: 3px solid;
+}
+
+.empanada {
+  border: 3px dashed;
+}
+
+.cajita {
+  border: 3px solid;
+}
+
+.postres {
+  border: 3px dashed;
+}
+
+.Coffee {
+  border: 3px dashed;
+}
+
+.te {
+  border: 3px solid;
+}
+
+.fra {
+  border: 3px dashed;
 }
 
 /*Formularios*/
@@ -121,7 +167,7 @@ label {
   display: flex;
   justify-content: center;
 }
-.redes .a {
+.redes a {
   display: flex;
   width: 40px;
   height: 40px;
@@ -154,6 +200,19 @@ label {
   margin: auto;
   height: 200px;
   width: 250px;
+}
+
+/*Efectos de animación*/
+input {
+  height: auto;
+  width: auto;
+  transition: all 1ms;
+}
+
+input:focus {
+  height: 40px;
+  width: 200px;
+  background-color: beige;
 }
 
 @media (max-width: 520px) {
@@ -194,43 +253,9 @@ label {
   #navbarNav a:hover {
     display: flex;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.8s;
     transform: scale(1.2);
     background-color: yellow;
     cursor: pointer;
-  }
-  .carne, .fra, .te, .coffee, .postres, .cajita, .empanada, .hamb, .pizza, .pasta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: 3px dashed;
-    border-radius: 20px;
-    place-items: center;
-  }
-  .pasta {
-    border: 3px solid;
-  }
-  .pizza {
-    border: 3px dashed;
-  }
-  .hamb {
-    border: 3px solid;
-  }
-  .empanada {
-    border: 3px dashed;
-  }
-  .cajita {
-    border: 3px solid;
-  }
-  .postres {
-    border: 3px dashed;
-  }
-  .coffee {
-    border: 3px dashed;
-  }
-  .te {
-    border: 3px solid;
-  }
-  .fra {
-    border: 3px dashed;
   }
 }/*# sourceMappingURL=main.css.map */

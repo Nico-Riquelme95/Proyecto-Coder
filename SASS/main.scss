@@ -52,6 +52,7 @@ body{
     background-color: antiquewhite;
     margin: 10px 10px;
     height: 80px;
+    transform: skew(340deg);
 }
 .contenedor{
     display: flex;
@@ -83,7 +84,7 @@ body{
     &:hover{
         display: flex;
         text-decoration: none;
-        transition: 0.3s;
+        transition: 0.8s;
         transform: scale(1.2);
         background-color: yellow;
         cursor: pointer;
@@ -95,6 +96,50 @@ body{
     background-color: antiquewhite;
     font-size: 20px;
     font-family: cursive;
+}
+
+.carne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px dashed;
+    border-radius: 20px;
+    place-items: center;
+}
+.pasta{
+    @extend .carne;
+    border: 3px solid;
+}
+.pizza{
+    @extend .carne;
+    border: 3px dashed;
+}
+.hamb{
+    @extend .carne;
+    border: 3px solid;
+}
+.empanada{
+    @extend .carne;
+    border: 3px dashed;
+}
+.cajita{
+    @extend .carne;
+    border: 3px solid;
+}
+.postres{
+    @extend .carne;
+    border: 3px dashed;
+}
+.Coffee{
+    @extend .carne;
+    border: 3px dashed;
+}
+.te{
+    @extend .carne;
+    border: 3px solid;
+}
+.fra{
+    @extend .carne;
+    border: 3px dashed;
 }
 
 /*Formularios*/
@@ -120,7 +165,7 @@ label{
     display: flex;
     justify-content: center;
 
-    .a {
+    a {
         display: flex;
         width: 40px;
         height: 40px;
@@ -151,6 +196,19 @@ padding: 0;
     margin: auto;
     height: 200px;
     width: 250px;
+}
+
+/*Efectos de animación*/
+input {
+    height: auto;
+    width: auto;
+    transition: all 1ms;
+}
+
+input:focus {
+    height: 40px;
+    width: 200px;
+    background-color: beige;
 }
 
 @media (max-width: 520px){
@@ -197,63 +255,9 @@ padding: 0;
     #navbarNav a:hover{
         display: flex;
         text-decoration: none;
-        transition: 0.3s;
+        transition: 0.8s;
         transform: scale(1.2);
         background-color: yellow;
         cursor: pointer;
     }
-
-    .carne{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border: 3px dashed;
-        border-radius: 20px;
-        place-items: center;
-    }
-
-    .pasta {
-        @extend .carne;
-        border: 3px solid;
-    }
-
-    .pizza {
-        @extend .carne;
-        border: 3px dashed;
-    }
-
-    .hamb {
-        @extend .carne;
-        border: 3px solid;
-    }
-
-    .empanada {
-        @extend .carne;
-        border: 3px dashed;
-    }
-
-    .cajita {
-        @extend .carne;
-        border: 3px solid;
-    }
-
-    .postres {
-        @extend .carne;
-        border: 3px dashed;
-    }
-
-    .coffee {
-        @extend .carne;
-        border: 3px dashed;
-    }
-
-    .te {
-        @extend .carne;
-        border: 3px solid;
-    }
-
-    .fra {
-        @extend .carne;
-        border: 3px dashed;
-    }
-
 }
