@@ -202,6 +202,18 @@ label {
   width: 250px;
 }
 
+.subir {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 40px;
+  font-family: "courgette", cursive;
+  font-size: large;
+  text-decoration: none;
+  color: blue;
+}
+
 /*Efectos de animación*/
 input {
   height: auto;
