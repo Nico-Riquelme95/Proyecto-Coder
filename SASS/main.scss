@@ -7,6 +7,7 @@ body{
     background-image: url(../Imagenes/Fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 5px;
 }
 
 /*Todo imagenes*/
@@ -230,7 +231,7 @@ input:focus {
         }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
     .navbar-brand{
         display: none;
     }
