@@ -93,18 +93,16 @@ body{
     }
 }
 
-.descripcion{
-    background-color: antiquewhite;
-    font-size: 20px;
-    font-family: cursive;
-}
-
 .carne {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 3px dashed;
     border-radius: 20px;
     place-items: center;
+    background-color: antiquewhite;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left
 }
 .pasta{
     @extend .carne;
@@ -141,6 +139,10 @@ body{
 .fra{
     @extend .carne;
     border: 3px dashed;
+}
+.dulce{
+    @extend .carne;
+    border: 3px solid;
 }
 
 /*Formularios*/
@@ -262,6 +264,12 @@ input:focus {
     }
     button .carousel-control-next-icon {
         display: none;
+    }
+
+    .carne{
+        display: inline-block;
+        text-align: left;
+        padding: 15px;
     }
 }
 
